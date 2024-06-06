@@ -1,0 +1,24 @@
+spring:
+  datasource:
+#    hikari:
+#      connection-timeout: 30000
+#      idle-timeout: 600000
+#      max-lifetime: 1800000
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/todoservice_toda?useSSL=false
+    username: root
+    password: root_531999
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: mysql
+  application:
+    name: toda
+server:
+  port: 8083
+
+
